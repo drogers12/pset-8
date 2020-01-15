@@ -10,17 +10,26 @@ public class Exercises {
 		if (a[a.length] == b[b.length] || a[0] == b[0]) {
 			return true;
 		}
-	}
-	public String endsMeet(String[] a, String[] b) {
-		
-		
-		return false;	// default return value to ensure compilation
+		return false;
 	}
 	
 	public String[] endsMeet(String[] values, int n) {
-		// write your code here
-		
-		
+		// write your code here 
+//		if (n < 1 || values.length < n) {			//might have to make it n < 0
+//			return null
+//		}
+//		
+//		String[] newArray = [n*2];
+//		int currentSize = 0;
+//		
+//		for (int i = 0; i < n; i++) {
+//			newArray[i] = (values[i]);
+//			currentSize++;
+//		}
+//		for (int i = values.length-1; i >= values.length-n; i--) {
+//			newArray[i] = (values[i]);
+//		}
+//		
 		return null;	// default return value to ensure compilation
 	}
 	
