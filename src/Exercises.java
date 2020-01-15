@@ -6,22 +6,20 @@ public class Exercises {
 		}
 		
 		// write your code here
-<<<<<<< HEAD
+
 		if (a[a.length] == b[b.length] || a[0] == b[0]) {
 			return true;
 		}
 	}
 	public String endsMeet(String[] a, String[] b) {
-		if (a == null || a.length < n || b == null || b.length < n) {
-			return false;
-		}
-=======
+		
 		
 		return false;	// default return value to ensure compilation
 	}
 	
 	public String[] endsMeet(String[] values, int n) {
 		// write your code here
+		
 		
 		return null;	// default return value to ensure compilation
 	}
@@ -72,6 +70,5 @@ public class Exercises {
 		// write your code here
 		
 		return -1;		// default return value to ensure compilation
->>>>>>> 9d766b64a34305ce7ee0358ea8bd7dc68ac9b3a3
 	}
 }
