@@ -7,30 +7,33 @@ public class Exercises {
 		
 		// write your code here
 
-		if (a[a.length] == b[b.length] || a[0] == b[0]) {
+		if (a[a.length-1] == b[b.length-1] || a[0] == b[0]) {
 			return true;
 		}
 		return false;
 	}
 	
 	public String[] endsMeet(String[] values, int n) {
-		// write your code here 
-//		if (n < 1 || values.length < n) {			//might have to make it n < 0
-//			return null
-//		}
-//		
-//		String[] newArray = [n*2];
-//		int currentSize = 0;
-//		
-//		for (int i = 0; i < n; i++) {
-//			newArray[i] = (values[i]);
-//			currentSize++;
-//		}
-//		for (int i = values.length-1; i >= values.length-n; i--) {
-//			newArray[i] = (values[i]);
-//		}
-//		
-		return null;	// default return value to ensure compilation
+		if (values == null || values.length < n || n < 1) {
+			String[] empty = new String[0];
+			return empty;
+			
+		} else {
+			
+			String[] newArray = new String[n*2];
+			int x = n;
+			for(int i = 0; i < n; i++) {
+				newArray[i] = values[i];
+			}
+			
+			for(int i = values.length-n; i < values.length; i++) {
+				newArray[x] = values[i];
+				x++;
+			}
+			
+			return newArray;
+			
+		}
 	}
 	
 	public int difference(int[] numbers) {
